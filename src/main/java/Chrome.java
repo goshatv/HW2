@@ -33,12 +33,14 @@ public class Chrome {
         WebElement userName = driver.findElement(By.xpath("/html/body/div[2]/div[3]/ul[1]/li[2]/a/b"));
         userName.getText().equals("test");
 
+        ///Time of sleep
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
+        //Closing of a driver
         driver.quit();
     }
 
